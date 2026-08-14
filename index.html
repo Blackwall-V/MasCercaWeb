@@ -181,22 +181,51 @@
         <p class="lead" data-i18n="solution.lead">Sin pantallas, sin instalaciones, sin pasos innecesarios.</p>
 
         <div class="solution__grid">
-          <article class="solution__card">
-            <span class="tag" aria-hidden="true">01 — Credencial</span>
-            <h3 data-i18n="solution.card1.h">Credencial Inteligente</h3>
-            <p data-i18n="solution.card1.p">Personalizada con la Red de Apoyo del usuario. Acerca un teléfono con NFC y los contactos aparecen listos para llamar.</p>
+          <article class="solution__card flip-card" tabindex="0" role="button" aria-pressed="false" aria-label="Ver imagen del Credencial">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__face--front">
+                <span class="tag" aria-hidden="true">01 — Credencial</span>
+                <h3 data-i18n="solution.card1.h">Credencial Inteligente</h3>
+                <p data-i18n="solution.card1.p">Personalizada con la Red de Apoyo del usuario. Acerca un teléfono con NFC y los contactos aparecen listos para llamar.</p>
+              </div>
+              <div class="flip-card__face flip-card__face--back">
+                <img src="assets/product/cards.png" alt="Credencial +Cerca">
+              </div>
+            </div>
           </article>
 
-          <article class="solution__card">
-            <span class="tag" aria-hidden="true">02 — Lanyard</span>
-            <h3 data-i18n="solution.card2.h">Lanyard personalizado</h3>
-            <p data-i18n="solution.card2.p">Visible, accesible, siempre a mano. Reduce el riesgo de extravío y acelera el acceso en una urgencia.</p>
+          <article class="solution__card flip-card" tabindex="0" role="button" aria-pressed="false" aria-label="Ver imagen del Lanyard">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__face--front">
+                <span class="tag" aria-hidden="true">02 — Lanyard</span>
+                <h3 data-i18n="solution.card2.h">Lanyard personalizado</h3>
+                <p data-i18n="solution.card2.p">Visible, accesible, siempre a mano. Reduce el riesgo de extravío y acelera el acceso en una urgencia.</p>
+              </div>
+              <div class="flip-card__face flip-card__face--back">
+                <img src="assets/product/Lanyard.png" alt="Lanyard +Cerca">
+              </div>
+            </div>
           </article>
 
-          <article class="solution__card">
-            <span class="tag" aria-hidden="true">03 — Llavero</span>
-            <h3 data-i18n="solution.card3.h">Llavero de Emergencia</h3>
-            <p data-i18n="solution.card3.p">Respaldo para cuando el celular no está disponible: sin batería, sin teléfono, o en manos de un tercero.</p>
+          <article class="solution__card flip-card" tabindex="0" role="button" aria-pressed="false" aria-label="Ver imagen del Llavero">
+            <div class="flip-card__inner">
+              <div class="flip-card__face flip-card__face--front">
+                <span class="tag" aria-hidden="true">03 — Llavero</span>
+                <h3 data-i18n="solution.card3.h">Llavero de Emergencia</h3>
+                <p data-i18n="solution.card3.p">Respaldo para cuando el celular no está disponible: sin batería, sin teléfono, o en manos de un tercero.</p>
+              </div>
+              <div class="flip-card__face flip-card__face--back">
+                <div class="flip-card__placeholder">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="8" cy="15" r="4"/>
+                    <path d="M10.85 12.15 19 4"/>
+                    <path d="m18 5 2 2"/>
+                    <path d="m15 8 2 2"/>
+                  </svg>
+                  <span data-i18n="solution.card3.placeholder">Imagen próximamente</span>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -359,5 +388,21 @@
   <script src="card3d.js" defer></script>
   <script src="i18n.js" defer></script>
   <script src="carousel.js" defer></script>
+  <script>
+    // ponytail: flip-card tap toggle for touch devices and ARIA sync.
+    document.querySelectorAll('.flip-card').forEach((card) => {
+      const toggle = (e) => {
+        const pressed = card.classList.toggle('is-flipped');
+        card.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+      };
+      card.addEventListener('click', toggle);
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle(e);
+        }
+      });
+    });
+  </script>
 </body>
 </html>

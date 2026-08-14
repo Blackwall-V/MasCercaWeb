@@ -36,6 +36,7 @@ const I18N = {
     'solution.card2.p': 'Visible, accesible, siempre a mano. Reduce el riesgo de extravío y acelera el acceso en una urgencia.',
     'solution.card3.h': 'Llavero de Emergencia',
     'solution.card3.p': 'Respaldo para cuando el celular no está disponible: sin batería, sin teléfono, o en manos de un tercero.',
+    'solution.card3.placeholder': 'Imagen próximamente',
 
     'gallery.kicker': 'En terreno',
     'gallery.h2': 'Así se ve +Cerca en la comunidad.',
@@ -118,6 +119,7 @@ const I18N = {
     'solution.card2.p': 'Visible, accessible, always within reach. Lowers the risk of loss and speeds up access in an emergency.',
     'solution.card3.h': 'Emergency Keychain',
     'solution.card3.p': 'Backup when the phone is unavailable: dead battery, no phone, or in someone else\'s hands.',
+    'solution.card3.placeholder': 'Image coming soon',
 
     'gallery.kicker': 'In the field',
     'gallery.h2': 'This is what +Cerca looks like in the community.',
