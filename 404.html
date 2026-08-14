@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B2A5B">
+  <title>404 — +Cerca</title>
+  <meta name="description" content="La página que buscas no existe.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://mascerca.cl/404">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="+Cerca, ir al inicio">
+        <img src="assets/logo.png" alt="+Cerca" width="125" height="119">
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav__links">
+          <li><a href="index.html#problema" data-i18n="nav.problem">El problema</a></li>
+          <li><a href="index.html#solucion" data-i18n="nav.solution">Solución</a></li>
+          <li><a href="index.html#terreno" data-i18n="nav.gallery">En terreno</a></li>
+          <li><a href="index.html#precio" data-i18n="nav.pricing">Precio</a></li>
+          <li><a href="index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang-switch" role="group" aria-label="Cambiar idioma">
+          <button type="button" data-lang-switch="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav__toggle-input" aria-label="Alternar menú">
+        <label for="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </label>
+      </div>
+    </div>
+
+    <div class="nav__drawer">
+      <ul>
+        <li><a href="index.html#problema" data-i18n="nav.problem">El problema</a></li>
+        <li><a href="index.html#solucion" data-i18n="nav.solution">Solución</a></li>
+        <li><a href="index.html#terreno" data-i18n="nav.gallery">En terreno</a></li>
+        <li><a href="index.html#precio" data-i18n="nav.pricing">Precio</a></li>
+        <li><a href="index.html#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="notfound">
+      <div class="container">
+        <div class="notfound__inner">
+          <span class="notfound__code" aria-hidden="true">404</span>
+          <span class="kicker" data-i18n="notfound.kicker">Error 404</span>
+          <h1 data-i18n="notfound.h1">La Red de Apoyo no encontró esta página.</h1>
+          <p class="lead" data-i18n="notfound.lead">Es posible que el enlace esté roto o que la página ya no exista.</p>
+          <a href="index.html" class="btn btn--primary" data-i18n="notfound.cta">Volver al inicio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__wordmark" aria-label="+Cerca">+CERCA</span>
+          <p data-i18n="footer.tagline">Innovación para la autonomía, la inclusión y la protección comunitaria.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Navegación del pie">
+          <a href="index.html#problema" data-i18n="nav.problem">El problema</a>
+          <a href="index.html#solucion" data-i18n="nav.solution">Solución</a>
+          <a href="index.html#terreno" data-i18n="nav.gallery">En terreno</a>
+          <a href="index.html#precio" data-i18n="nav.pricing">Precio</a>
+          <a href="index.html#contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <nav class="footer__nav" aria-label="Legal">
+          <a href="mailto:contacto@mascerca.cl">contacto@mascerca.cl</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2026 +Cerca. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js" defer></script>
+</body>
+</html>

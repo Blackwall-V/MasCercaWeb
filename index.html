@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B2A5B">
+  <title>+Cerca — Red de Apoyo NFC</title>
+  <meta name="description" content="Una credencial inteligente con NFC para que adultos mayores y personas con discapacidad contacten a su Red de Apoyo en segundos. Sin apps, sin baterías, sin complicarse.">
+  <meta name="keywords" content="+Cerca, NFC, Red de Apoyo, adultos mayores, discapacidad, Chile, emergencia, credencial">
+  <meta name="author" content="+Cerca">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="+Cerca — Red de Apoyo NFC">
+  <meta property="og:description" content="La Red de Apoyo siempre disponible. Una credencial NFC para emergencias.">
+  <meta property="og:image" content="assets/og-cover.jpg">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:locale:alternate" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="+Cerca — Red de Apoyo NFC">
+  <meta name="twitter:description" content="La Red de Apoyo siempre disponible. Una credencial NFC para emergencias.">
+  <meta name="twitter:image" content="assets/og-cover.jpg">
+
+  <link rel="canonical" href="https://mascerca.cl/">
+  <link rel="alternate" hreflang="es" href="https://mascerca.cl/">
+  <link rel="alternate" hreflang="en" href="https://mascerca.cl/en/">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/Front2.png" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "+Cerca",
+    "url": "https://mascerca.cl/",
+    "logo": "https://mascerca.cl/assets/logo.png",
+    "description": "Innovación para la autonomía, la inclusión y la protección comunitaria.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CL"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" role="banner">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="+Cerca, ir al inicio">
+        <img src="assets/logo.png" alt="+Cerca" width="125" height="119">
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="nav__links">
+          <li><a href="#problema" data-i18n="nav.problem">El problema</a></li>
+          <li><a href="#solucion" data-i18n="nav.solution">Solución</a></li>
+          <li><a href="#terreno" data-i18n="nav.gallery">En terreno</a></li>
+          <li><a href="#precio" data-i18n="nav.pricing">Precio</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <div class="lang-switch" role="group" aria-label="Cambiar idioma">
+          <button type="button" data-lang-switch="es" aria-pressed="true">ES</button>
+          <button type="button" data-lang-switch="en" aria-pressed="false">EN</button>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav__toggle-input" aria-label="Alternar menú">
+        <label for="nav-toggle" class="nav-toggle" aria-label="Abrir menú">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </label>
+      </div>
+    </div>
+
+    <div class="nav__drawer">
+      <ul>
+        <li><a href="#problema" data-i18n="nav.problem">El problema</a></li>
+        <li><a href="#solucion" data-i18n="nav.solution">Solución</a></li>
+        <li><a href="#terreno" data-i18n="nav.gallery">En terreno</a></li>
+        <li><a href="#precio" data-i18n="nav.pricing">Precio</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <span class="hero__badge" data-i18n="hero.badge">+Cerca</span>
+            <h1 data-i18n="hero.h1">En una emergencia, la memoria puede fallar. La Red de Apoyo no.</h1>
+            <p class="lead" data-i18n="hero.lead">Una credencial inteligente con NFC para que adultos mayores y personas con discapacidad contacten a su red de apoyo en segundos, sin apps, sin baterías, sin complicarse.</p>
+            <div class="hero__cta">
+              <a href="#contacto" class="btn btn--primary" data-i18n="hero.cta1">Contactar al equipo</a>
+              <a href="#terreno" class="btn btn--ghost" data-i18n="hero.cta2">Ver en terreno</a>
+            </div>
+          </div>
+
+          <div class="hero__card-wrap">
+            <figure class="hero-card">
+              <card-3d
+                front="assets/Front2.png"
+                back="assets/back.png"
+                width="340"
+                height="500"
+                radius="18"
+                thickness="3"
+                aria-label="Credencial +Cerca, arrastra para girar y ver el reverso"
+                data-i18n-aria="card.aria">
+              </card-3d>
+              <figcaption class="hero-card__hint">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 12a9 9 0 1 0 3.2-6.86" stroke-linecap="round"/>
+                  <path d="M3 4v5h5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <text x="12" y="14" text-anchor="middle">360</text>
+                </svg>
+                <span data-i18n="hero.hint">Conoce mejor nuestro producto</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMA ============ -->
+    <section id="problema" class="section section--soft">
+      <div class="container">
+        <span class="kicker" data-i18n="problem.kicker">El problema</span>
+        <h2 data-i18n="problem.h2">Cada segundo cuenta cuando la ayuda no llega.</h2>
+        <p class="lead" data-i18n="problem.lead">En Chile, el envejecimiento avanza rápido. Y con él, crece el número de personas que necesitan apoyo para mantenerse seguras y autónomas.</p>
+
+        <div class="problem__grid">
+          <article class="problem__item">
+            <span class="num" aria-hidden="true">01</span>
+            <h3 data-i18n="problem.item1.h">El número se olvida</h3>
+            <p data-i18n="problem.item1.p">Una caída, un episodio de desorientación, un momento de estrés. El teléfono está ahí, pero encontrar el contacto correcto puede tomar minutos.</p>
+          </article>
+
+          <article class="problem__item">
+            <span class="num" aria-hidden="true">02</span>
+            <h3 data-i18n="problem.item2.h">El celular no siempre está</h3>
+            <p data-i18n="problem.item2.p">Sin batería, sin señal, en otra habitación, o en manos de otra persona. La urgencia no espera.</p>
+          </article>
+
+          <article class="problem__item">
+            <span class="num" aria-hidden="true">03</span>
+            <h3 data-i18n="problem.item3.h">A cualquiera le puede pasar</h3>
+            <p data-i18n="problem.item3.p">Personas mayores, personas con discapacidad, personas con deterioro cognitivo leve, enfermedades crónicas o que viven solas. La vulnerabilidad no distingue.</p>
+          </article>
+
+          <article class="problem__item">
+            <span class="num" aria-hidden="true">04</span>
+            <h3 data-i18n="problem.item4.h">Quien auxilia también se pierde</h3>
+            <p data-i18n="problem.item4.p">Un vecino, un funcionario, un transeúnte. Quien quiere ayudar no sabe a quién llamar.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOLUCIÓN ============ -->
+    <section id="solucion" class="section">
+      <div class="container">
+        <span class="kicker" data-i18n="solution.kicker">La solución</span>
+        <h2 data-i18n="solution.h2">Tres objetos. Una red de apoyo.</h2>
+        <p class="lead" data-i18n="solution.lead">Sin pantallas, sin instalaciones, sin pasos innecesarios.</p>
+
+        <div class="solution__grid">
+          <article class="solution__card">
+            <span class="tag" aria-hidden="true">01 — Credencial</span>
+            <h3 data-i18n="solution.card1.h">Credencial Inteligente</h3>
+            <p data-i18n="solution.card1.p">Personalizada con la Red de Apoyo del usuario. Acerca un teléfono con NFC y los contactos aparecen listos para llamar.</p>
+          </article>
+
+          <article class="solution__card">
+            <span class="tag" aria-hidden="true">02 — Lanyard</span>
+            <h3 data-i18n="solution.card2.h">Lanyard personalizado</h3>
+            <p data-i18n="solution.card2.p">Visible, accesible, siempre a mano. Reduce el riesgo de extravío y acelera el acceso en una urgencia.</p>
+          </article>
+
+          <article class="solution__card">
+            <span class="tag" aria-hidden="true">03 — Llavero</span>
+            <h3 data-i18n="solution.card3.h">Llavero de Emergencia</h3>
+            <p data-i18n="solution.card3.p">Respaldo para cuando el celular no está disponible: sin batería, sin teléfono, o en manos de un tercero.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EN TERRENO ============ -->
+    <section id="terreno" class="section">
+      <div class="container">
+        <span class="kicker" data-i18n="gallery.kicker">En terreno</span>
+        <h2 data-i18n="gallery.h2">Así se ve +Cerca en la comunidad.</h2>
+        <p class="lead" data-i18n="gallery.lead">Pilotos, ferias, grupos de adulto mayor y municipalidades. La Red de Apoyo ya está en marcha.</p>
+
+        <div class="carousel">
+          <button type="button" class="carousel__btn carousel__btn--prev" aria-label="Foto anterior">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+
+          <div class="carousel__track" id="gallery">
+            <img src="assets/gallery/IMG-20260813-WA0007.jpg" alt="Actividad comunitaria con adultos mayores" loading="lazy" decoding="async" width="900" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0008.jpg" alt="Personas mayores recibiendo el Kit +Cerca" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0009.jpg" alt="Grupo de adulto mayor en taller +Cerca" loading="lazy" decoding="async" width="900" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0010.jpg" alt="Demostración de la credencial NFC" loading="lazy" decoding="async" width="900" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0011.jpg" alt="Evento +Cerca en la comunidad" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0012.jpg" alt="Participantes en feria de salud" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0013.jpg" alt="Red de Apoyo en acción" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0014.jpg" alt="Adultos mayores en jornada +Cerca" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0015.jpg" alt="Cuidadores y beneficiarios del kit" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0016.jpg" alt="Momento del piloto municipal" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0017.jpg" alt="Actividad con la Red de Apoyo" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0018.jpg" alt="Equipo +Cerca en terreno" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0019.jpg" alt="Personas mayores usando +Cerca" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0020.jpg" alt="Jornada comunitaria +Cerca" loading="lazy" decoding="async" width="1200" height="1600">
+            <img src="assets/gallery/IMG-20260813-WA0021.jpg" alt="Encuentro +Cerca en la comunidad" loading="lazy" decoding="async" width="1200" height="1600">
+          </div>
+
+          <button type="button" class="carousel__btn carousel__btn--next" aria-label="Foto siguiente">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="9 18 15 12 9 6" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section id="precio" class="section section--soft">
+      <div class="container">
+        <div class="pricing__wrap">
+          <article class="pricing__card">
+            <span class="kicker" data-i18n="pricing.kicker">Precio</span>
+            <h2 data-i18n="pricing.h2">Kit +Cerca</h2>
+            <div class="pricing__price" data-i18n="pricing.price">$12.990</div>
+            <span class="pricing__per" data-i18n="pricing.per">por beneficiario</span>
+
+            <span class="pricing__includes" data-i18n="pricing.includes">Incluye</span>
+            <ul class="pricing__list">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="pricing.item1">Credencial Inteligente personalizada</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="pricing.item2">Configuración inicial de la Red de Apoyo</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="pricing.item3">Lanyard personalizado</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="pricing.item4">Llavero de Emergencia</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="pricing.item5">Guía de uso</span>
+              </li>
+            </ul>
+
+            <p class="pricing__markets" data-i18n="pricing.markets">Disponible para instituciones (municipalidades, SENAMA, SENADIS, CESFAM, fundaciones) y familias.</p>
+
+            <a href="#contacto" class="btn btn--primary" data-i18n="pricing.cta">Hablar con el equipo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VISIÓN ============ -->
+    <section id="vision" class="section section--dark">
+      <div class="container">
+        <div class="vision__text">
+          <span class="kicker" data-i18n="vision.kicker">Visión</span>
+          <h2 data-i18n="vision.h2">Que ninguna persona enfrente sola una emergencia.</h2>
+          <p data-i18n="vision.p">La tecnología debe eliminar barreras, no crearlas. +Acerca la ayuda, fortalece las redes de apoyo y promueve una sociedad más inclusiva, segura y conectada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="contact__inner">
+          <div>
+            <span class="kicker" data-i18n="contact.kicker">Conversemos</span>
+            <h2 data-i18n="contact.h2">¿Quieres llevar +Cerca a tu comunidad?</h2>
+            <p class="lead" data-i18n="contact.lead">Cuéntanos quiénes son las personas que quieres cuidar y te ayudamos a configurar el piloto.</p>
+          </div>
+
+          <form class="contact__form" action="mailto:contacto@mascerca.cl" method="post" enctype="text/plain">
+            <div class="field">
+              <label for="name" data-i18n="contact.name">Nombre</label>
+              <input type="text" id="name" name="name" required data-i18n-placeholder="contact.name">
+            </div>
+            <div class="field">
+              <label for="org" data-i18n="contact.org">Organización (opcional)</label>
+              <input type="text" id="org" name="org" data-i18n-placeholder="contact.org">
+            </div>
+            <div class="field">
+              <label for="email" data-i18n="contact.email">Email</label>
+              <input type="email" id="email" name="email" required data-i18n-placeholder="contact.email">
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="contact.message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact.message"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" data-i18n="contact.send">Enviar mensaje</button>
+          </form>
+
+          <p class="contact__alt">
+            <span data-i18n="contact.alt">O escríbenos a</span> <a href="mailto:contacto@mascerca.cl">contacto@mascerca.cl</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__wordmark" aria-label="+Cerca">+CERCA</span>
+          <p data-i18n="footer.tagline">Innovación para la autonomía, la inclusión y la protección comunitaria.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Navegación del pie">
+          <a href="#problema" data-i18n="nav.problem">El problema</a>
+          <a href="#solucion" data-i18n="nav.solution">Solución</a>
+          <a href="#terreno" data-i18n="nav.gallery">En terreno</a>
+          <a href="#precio" data-i18n="nav.pricing">Precio</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <nav class="footer__nav" aria-label="Legal">
+          <a href="mailto:contacto@mascerca.cl">contacto@mascerca.cl</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="footer.copy">© 2026 +Cerca. Todos los derechos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="card3d.js" defer></script>
+  <script src="i18n.js" defer></script>
+  <script src="carousel.js" defer></script>
+</body>
+</html>
